@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
         binding.tipResult.text = ""
-        val amount = binding.costOfService.text.toString().toDoubleOrNull() ?: return
+        val amount = binding.costOfServiceEditText.text.toString().toDoubleOrNull() ?: return
         val tipPercent = when (binding.tipOptions.checkedRadioButtonId) {
             R.id.option_eighteen_percent -> 0.18
             R.id.option_twenty_percent -> 0.20
